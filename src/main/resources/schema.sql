@@ -1,0 +1,25 @@
+CREATE SCHEMA  IF NOT EXISTS animal_traits_db;
+USE animal_traits_db;
+CREATE TABLE animal_traits(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	animal_type VARCHAR(20) NOT NULL,
+	fact VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE access_log(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	ip_address VARCHAR(20) NOT NULL,
+	animal_type VARCHAR(20) NOT NULL,
+	fact_returned VARCHAR(255) NOT NULL,
+	local_date_time TIMESTAMP WITH TIME ZONE
+);
+
+CREATE TABLE dog_traits(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	fact VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE cat_traits(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	fact VARCHAR(255) NOT NULL
+);
