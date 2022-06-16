@@ -11,7 +11,7 @@ example POST request for this project: http://192.168.0.108:8081/getFact with PO
  4. ChatmentAccessLogFilter is a custom filter which intercepts the http request and authenticates request to the endpoint /access/log using APi-Key in the request header.
  
 5. The Embedded Database has 4 entities: animal_traits, cat_traits, dog_traits and access_log. The animal_traits entity was used for testing and I forgot to delete before building. the rest 3 entities are used in this project.
-schema.sql and data.sql under srs/main/resources initialize the schema and entities during run time of project.
+schema.sql and data.sql under src/main/resources initialize the schema and entities during run time of project.
 Database can be access via console at http://<localhost/IP:<port>/h2-console
 Steps to run project: 
 1.) Navigate to directory of the project.
