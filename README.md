@@ -19,3 +19,6 @@ Steps to run project: <br/>
 3.) Now go to directory of the jar file <br/>
 4.) execute java -jar <filename.jar> <br/>
 5.) Use PostMan to send POST or GET requests to specific endpoints. <br/>
+
+
+(C) Rohan Reddy Melachervu - 2022
