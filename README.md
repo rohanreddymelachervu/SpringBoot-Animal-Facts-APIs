@@ -1,10 +1,10 @@
 # Chatment-SpringBoot-Animal-Facts-APIs
 Chatment-SpringBoot-Animal-Facts-APIs
 Endpoints:
-1. Get Animal Fact: POST to http://<localhost/IP>:<port>/getFact with POST body of JSON  {"animalType":"<animal_name>"} replace animal_name with either cat or dog. This endpoint returns a random fact about that animal and logs access info to Access Log Entity in the Embedded H2 DataBase which is in-memory (non persistent). 
+1. Get Animal Fact: POST to http://<localhost/IP>:<portNumber>/getFact with POST body of JSON  {"animalType":"<animal_name>"} replace animal_name with either cat or dog. This endpoint returns a random fact about that animal and logs access info to Access Log Entity in the Embedded H2 DataBase which is in-memory (non persistent). 
 example POST request for this project: http://192.168.0.108:8081/getFact with POST Body as {"animalType":"dog"} 
 
-2. Get Access Log Info: GET to http://<localhost/IP>:<port>/access/log) and add a header with Key: "Authorization" and Value: "chatment-access-log-api-key-hlTYXuavbTbxWRARrhvRj112i6zBbEBhtHwUdUGvUbhv0fO6uOhtVyHAxKJFIvVV8aqIPVbWQLdTwJZ0oMV3BLK8ypRnd3s3bhug" (this API Key is read by a custom filter from the application.properties file and verified within this). This endpoint returns all the data from Access Log Entity from the Embedded DataBase. 
+2. Get Access Log Info: GET to http://<localhost/IP>:<portNumber>/access/log) and add a header with Key: "Authorization" and Value: "chatment-access-log-api-key-hlTYXuavbTbxWRARrhvRj112i6zBbEBhtHwUdUGvUbhv0fO6uOhtVyHAxKJFIvVV8aqIPVbWQLdTwJZ0oMV3BLK8ypRnd3s3bhug" (this API Key is read by a custom filter from the application.properties file and verified within this). This endpoint returns all the data from Access Log Entity from the Embedded DataBase. 
 
  3. Access Log API-Key is configured in application.properties of Spring Boot in src\main\resources. It is used by ChatmentAccessLogFilter for access log API authentication.
  
