@@ -18,4 +18,4 @@ Steps to run project: <br/>
 2.) execute mvn install -DskipTests <br/>
 3.) Now go to directory of the jar file <br/>
 4.) execute java -jar <filename.jar> <br/>
-5.) Use PostMan to send POST or GET request to specific endpoints. <br/>
+5.) Use PostMan to send POST or GET requests to specific endpoints. <br/>
