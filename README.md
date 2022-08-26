@@ -1,5 +1,5 @@
-# Chatment-SpringBoot-Animal-Facts-APIs
-Chatment-SpringBoot-Animal-Facts-APIs <br/>
+# SpringBoot-Animal-Facts-APIs
+SpringBoot-Animal-Facts-APIs <br/>
 Endpoints: <br/>
 1. Get Animal Fact: POST to http://<localhost/IP>:(port)/getFact with POST body of JSON  {"animalName":"<animal_name>"} replace animal_name with either cat or dog. This endpoint returns a random fact about that animal and logs access info to Access Log Entity in the Embedded H2 DataBase which is in-memory (non persistent). 
 example POST request for this project: http://192.168.0.108:8081/getFact with POST Body as {"animalType":"dog"} <br/>
